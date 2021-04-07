@@ -19,9 +19,11 @@ const Posts = () => {
           <div className="posts__img">
             <img src={post.image} alt={post.image} />
           </div>
-          {liked && user ? (
+          
+          {liked  ? (
           <FavoriteIcon fontSize="large" className="favourite" onClick={(e) =>{ setLiked(false)
-          setLike(like-1)}} />
+          setLike(like-1)
+          }} />
           
         ) : (
           <FavoriteBorderIcon
@@ -33,7 +35,7 @@ const Posts = () => {
             setLike(like+1)}}
           />
           
-        )}
+        )} 
         <p className="like">{like} likes</p>
         
         

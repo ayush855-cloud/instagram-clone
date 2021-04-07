@@ -4,9 +4,9 @@ const Sidebar = () => {
   const { loader, user } = React.useContext(ContextProvider);
   const username = !loader && user && user.displayName ? user.displayName : "";
   const [state] = React.useState([
-    { id: 1, image: "/images/boy3.jpg", name: "utkarsh432" },
-    { id: 2, image: "/images/girl1.jpg", name: "piyush32" },
-    { id: 3, image: "/images/girl5.jpg", name: "mahadevan4" },
+    { id: 1, image: "https://slism.com/wpsystem/wp-content/uploads/talk-to-random-people-005-positive-woman.jpg", name: "utkarsh432" },
+    { id: 2, image: "http://eecue.com/i/random-people-eecue_23500_270d_l.jpg", name: "piyush32" },
+    { id: 3, image: "https://dz9yg0snnohlc.cloudfront.net/new-the-enjoyable-art-of-learning-to-talk-to-random-people-2.png", name: "mahadevan4" },
   ]);
   return (
     <div className="sidebar">

@@ -1,5 +1,6 @@
 {
   "name": "inst-clone",
+  "homepage": "https://ayush855-cloud.github.io/instagram-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,13 +11,17 @@
     "@testing-library/user-event": "^12.7.0",
     "emoji-picker-react": "^3.4.4",
     "firebase": "^8.2.7",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.2",
     "web-vitals": "^1.1.0"
+    
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

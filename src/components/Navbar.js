@@ -37,7 +37,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navbar__first">
         <div className="navbar__first-logo">
-          <img src="/images/instagramLogo.png" alt="" />
+          <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="" />
         </div>
        </div>
        <div className="navbar__middle">
