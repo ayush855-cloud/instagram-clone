@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React,{useState} from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Model from "./components/Model";
+import Stories from "./components/Stories";
+import Create from "./components/Create";
+import Posts from "./components/Posts";
+import Sidebar from "./components/Sidebar";
+import Context from "./Global/Context";
 function App() {
+  const [loading,setLoading]=useState(true);
+  setTimeout(()=>setLoading(false),2500);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {loading ? (
+      <div className="loadingScreen">
+        <img
+          src="https://www.freepnglogos.com/uploads/instagram-logo-png-transparent-0.png"
+          alt="Instagram Logo"
+        />
+      </div>
+    ) : (
+      <Context>
+         <Navbar />
+         <div className="container">
+           <Stories />
+           <Create />
+           <Posts />
+           <Sidebar />
+         </div>
+         <Model />
+       </Context>
+    )}
+
+
+    </>
   );
 }
 
