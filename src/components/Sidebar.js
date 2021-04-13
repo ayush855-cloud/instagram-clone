@@ -5,7 +5,7 @@ const Sidebar = () => {
   const username = !loader && user && user.displayName ? user.displayName : "";
   const [state] = React.useState([
     { id: 1, image: "https://slism.com/wpsystem/wp-content/uploads/talk-to-random-people-005-positive-woman.jpg", name: "utkarsh432" },
-    { id: 2, image: "http://eecue.com/i/random-people-eecue_23500_270d_l.jpg", name: "piyush32" },
+    { id: 2, image: "https://i.insider.com/5799f6efdd08954f578b4840?width=600&format=jpeg&auto=webp", name: "piyush32" },
     { id: 3, image: "https://dz9yg0snnohlc.cloudfront.net/new-the-enjoyable-art-of-learning-to-talk-to-random-people-2.png", name: "mahadevan4" },
   ]);
   return (

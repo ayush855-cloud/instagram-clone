@@ -48,7 +48,7 @@ const Model = () => {
               <div className="model__form">
                 <form onSubmit={registerUser}>
                   <div className="model__group">
-                    <img src="/images/instagramLogo.png" alt="" />
+                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="" />
                   </div>
                   <div className="model__group">
                     <input
@@ -101,7 +101,7 @@ const Model = () => {
                <div className="model__form">
                 <form onSubmit={userLogin}>
                   <div className="model__group">
-                    <img src="/images/instagramLogo.png" alt="" />
+                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="" />
                   </div>
                   <div className="model__group">
                     <input
